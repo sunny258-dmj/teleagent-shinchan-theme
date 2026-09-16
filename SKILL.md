@@ -19,7 +19,7 @@ Use the scripts in this skill instead of editing TeleAgent resources by hand. Th
 
 4. Confirm that the script reports a verified themed archive and that TeleAgent reopens. When UI automation is available, visually check the home page, conversation page, settings dialog, empty states, and both light and dark modes.
 
-The visual assets under `assets/` are embedded into the renderer stylesheet as PNG data URIs at build time. Keep `shinchan-avatar.png`, `shinchan-peek.png`, `shinchan-wave.png`, `shiro.png`, `shinchan-sleep.png`, and `shinchan-scene.png` together with `shinchan-theme.css`.
+The visual assets under `assets/` are embedded into the renderer stylesheet as SVG data URIs at build time. Keep `shinchan-avatar.svg`, `shinchan-peek.svg`, `shinchan-wave.svg`, `shiro.svg`, `shinchan-sleep.svg`, and `shinchan-scene.svg` together with `shinchan-theme.css`.
 
 Do not use `-ForceUnsupportedVersion` unless the user explicitly accepts testing an unverified TeleAgent version. The installer must preserve its backup and metadata under TeleAgent's `resources\.teleagent-shinchan-theme` directory.
 
