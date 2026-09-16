@@ -62,4 +62,4 @@ if ($restoredHash -ne [string]$state.sourceAsarSha256) { throw 'The restored arc
 
 Remove-Item -LiteralPath $metadataPath -Force
 Write-Host 'The Shin-chan theme was removed and the original TeleAgent interface was restored.'
-if ($Restart) { Start-Process -FilePath 'explorer.exe' -ArgumentList ('"{0}"' -f $exe); Write-Host 'TeleAgent was reopened.' }
+if ($Restart) { & $exe; Write-Host 'TeleAgent was reopened.' }

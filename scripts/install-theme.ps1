@@ -7,7 +7,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $SupportedVersions = @('2.5.2', '2.5.2.0')
-$ThemeVersion = '1.0.2'
+$ThemeVersion = '2.0.1'
 $PatchScript = Join-Path $PSScriptRoot 'patch-theme.ps1'
 
 function Resolve-TeleAgentRoot {
@@ -130,7 +130,7 @@ if (Test-Path -LiteralPath $metadataPath) {
     $currentState = Get-Content -LiteralPath $metadataPath -Raw | ConvertFrom-Json
     if (($currentState.themedAsarSha256 -eq $currentHash) -and ($currentState.themeVersion -eq $ThemeVersion)) {
         Write-Host 'The Shin-chan theme is already installed.'
-        if ($Restart) { Start-Process -FilePath 'explorer.exe' -ArgumentList ('"{0}"' -f $exe) }
+        if ($Restart) { & $exe }
         exit 0
     }
     if ($currentState.themedAsarSha256 -eq $currentHash) {
@@ -243,7 +243,7 @@ try {
     Write-Host 'The Shin-chan theme is installed and the original archive is backed up.'
 
     if ($Restart) {
-        Start-Process -FilePath 'explorer.exe' -ArgumentList ('"{0}"' -f $exe)
+        & $exe
         Write-Host 'TeleAgent was reopened.'
     }
 }

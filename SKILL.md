@@ -5,7 +5,7 @@ description: Install, verify, reapply, or uninstall the reversible Crayon Shin-c
 
 # TeleAgent 蜡笔小新主题
 
-Use the scripts in this skill instead of editing TeleAgent resources by hand. The theme changes the Electron renderer CSS and synchronizes the matching embedded ASAR header hash in the Windows executable; it does not change accounts, conversations, tools, or the separate desktop pet. Both original files are backed up and hash-verified for uninstall.
+Use the scripts in this skill instead of editing TeleAgent resources by hand. Theme v2 appends renderer CSS, injects a pointer-events-none decoration container, and synchronizes the matching embedded ASAR header hash in the Windows executable. It does not change accounts, conversations, tools, or the separate desktop pet. The original archive and executable are backed up and hash-verified for uninstall.
 
 ## Install
 
@@ -17,7 +17,9 @@ Use the scripts in this skill instead of editing TeleAgent resources by hand. Th
    powershell.exe -NoProfile -ExecutionPolicy Bypass -File .\scripts\install-theme.ps1 -Restart
    ```
 
-4. Confirm that the script reports a verified themed archive and that TeleAgent reopens. When UI automation is available, visually check the home page, conversation page, settings dialog, and both light and dark modes.
+4. Confirm that the script reports a verified themed archive and that TeleAgent reopens. When UI automation is available, visually check the home page, conversation page, settings dialog, empty states, and both light and dark modes.
+
+The visual assets under `assets/` are embedded into the renderer stylesheet as SVG data URIs at build time. Keep `shinchan-avatar.svg`, `shinchan-peek.svg`, `shinchan-wave.svg`, `shiro.svg`, `shinchan-sleep.svg`, and `shinchan-scene.svg` together with `shinchan-theme.css`.
 
 Do not use `-ForceUnsupportedVersion` unless the user explicitly accepts testing an unverified TeleAgent version. The installer must preserve its backup and metadata under TeleAgent's `resources\.teleagent-shinchan-theme` directory.
 
