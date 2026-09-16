@@ -1,0 +1,9 @@
+interface:
+  display_name: "TeleAgent 蜡笔小新主题"
+  short_description: "安装、验证或卸载可恢复的 TeleAgent 小新界面主题"
+  icon_small: "./assets/shinchan-avatar.png"
+  icon_large: "./assets/shinchan-avatar.png"
+  brand_color: "#2F6BFF"
+  default_prompt: "使用 $teleagent-shinchan-theme 为这台电脑上的 TeleAgent 安装并验证蜡笔小新主题。"
+policy:
+  allow_implicit_invocation: true

@@ -1,0 +1,181 @@
+/* teleagent-shinchan-theme:begin */
+/* Version: __THEME_VERSION__ */
+
+:root {
+  --radius: 0.9rem;
+  --foreground: #24345c;
+  --background: #f5fbff;
+  --g8-gray: #24345c;
+  --card: #fffdf5;
+  --card-foreground: #24345c;
+  --popover: #ffffff;
+  --popover-foreground: #24345c;
+  --primary: #2f6bff;
+  --primary-foreground: #ffffff;
+  --primary-hover: #1748c9;
+  --secondary: #eaf5ff;
+  --secondary-foreground: #41547d;
+  --muted: #fff7ce;
+  --muted-foreground: #667397;
+  --accent: #ffef9b;
+  --accent-foreground: #25365d;
+  --destructive: #f04b4b;
+  --brand-green: #44c994;
+  --brand-amber: #ffad32;
+  --warning-foreground: #ad6500;
+  --border: #cfe4f7;
+  --input: #dcecf8;
+  --ring: #2f6bff;
+  --chart-1: #2f6bff;
+  --chart-2: #44c994;
+  --chart-3: #ffd43b;
+  --chart-4: #ff5c57;
+  --chart-5: #8668ff;
+  --chart-6: #57b7b1;
+  --chart-7: #58b8ff;
+  --sidebar: #eaf6ff;
+  --sidebar-foreground: #24345c;
+  --sidebar-primary: #2f6bff;
+  --sidebar-primary-foreground: #ffffff;
+  --sidebar-accent: #fff2a8;
+  --sidebar-accent-foreground: #24345c;
+  --sidebar-border: #c9e3f5;
+  --sidebar-ring: #2f6bff;
+  --subtle-foreground: #6e7ca0;
+  --disabled-foreground: #a8b6cd;
+  --separator: #d5e8f6;
+  --module: #ffffff;
+  --shadow: #2f6bff18;
+  --mention-chip-bg: #e6f2ff;
+}
+
+.dark {
+  --foreground: #eef6ff;
+  --background: #18233b;
+  --g8-gray: #18233b;
+  --card: #202e4c;
+  --card-foreground: #eef6ff;
+  --popover: #223250;
+  --popover-foreground: #eef6ff;
+  --primary: #6fa0ff;
+  --primary-foreground: #14203a;
+  --primary-hover: #91b7ff;
+  --secondary: #253754;
+  --secondary-foreground: #d8e6fb;
+  --muted: #37415b;
+  --muted-foreground: #bdcbe0;
+  --accent: #4a4661;
+  --accent-foreground: #fff4ae;
+  --destructive: #ff6b67;
+  --border: #3c5272;
+  --input: #3a4e6e;
+  --ring: #76a5ff;
+  --sidebar: #152139;
+  --sidebar-foreground: #eef6ff;
+  --sidebar-primary: #76a5ff;
+  --sidebar-primary-foreground: #152139;
+  --sidebar-accent: #3d4660;
+  --sidebar-accent-foreground: #fff1a3;
+  --sidebar-border: #314865;
+  --sidebar-ring: #76a5ff;
+  --subtle-foreground: #aabbd3;
+  --disabled-foreground: #6e7f9c;
+  --separator: #3a506d;
+  --module: #202e4c;
+  --shadow: #00000038;
+  --mention-chip-bg: #2b4161;
+  --warning-foreground: #ffd46b;
+}
+
+html,
+body,
+#root {
+  min-height: 100%;
+}
+
+body {
+  background-color: var(--background);
+  background-image:
+    radial-gradient(circle at 9% 8%, rgb(255 214 59 / 18%) 0 5px, transparent 6px),
+    radial-gradient(circle at 92% 14%, rgb(47 107 255 / 11%) 0 90px, transparent 91px),
+    linear-gradient(145deg, rgb(110 194 255 / 8%), transparent 38%);
+}
+
+.dark body {
+  background-image:
+    radial-gradient(circle at 9% 8%, rgb(255 214 59 / 12%) 0 5px, transparent 6px),
+    radial-gradient(circle at 92% 14%, rgb(111 160 255 / 10%) 0 90px, transparent 91px),
+    linear-gradient(145deg, rgb(51 91 155 / 18%), transparent 42%);
+}
+
+body::after {
+  content: "";
+  position: fixed;
+  right: 18px;
+  bottom: 12px;
+  width: 88px;
+  height: 88px;
+  z-index: 2147483000;
+  pointer-events: none;
+  background: url("__SHINCHAN_AVATAR_DATA__") center / contain no-repeat;
+  opacity: 0.13;
+  filter: drop-shadow(0 8px 14px rgb(35 67 118 / 20%));
+}
+
+.dark body::after {
+  opacity: 0.1;
+  filter: drop-shadow(0 8px 18px rgb(0 0 0 / 35%));
+}
+
+::selection {
+  color: #19305f;
+  background: #ffe56b;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+
+::-webkit-scrollbar-thumb {
+  border: 3px solid transparent;
+  border-radius: 999px;
+  background: color-mix(in srgb, var(--primary) 38%, transparent);
+  background-clip: padding-box;
+}
+
+.home-query-card {
+  border: 1px solid color-mix(in srgb, var(--query-accent, var(--primary)) 25%, var(--border));
+  background: linear-gradient(145deg, var(--card), color-mix(in srgb, var(--query-accent, var(--primary)) 7%, var(--card)));
+  box-shadow: 0 10px 26px color-mix(in srgb, var(--query-accent, var(--primary)) 9%, transparent);
+  transition: transform 160ms ease, box-shadow 160ms ease, border-color 160ms ease;
+}
+
+.home-query-card:hover {
+  transform: translateY(-2px);
+  border-color: color-mix(in srgb, var(--query-accent, var(--primary)) 52%, var(--border));
+  box-shadow: 0 14px 32px color-mix(in srgb, var(--query-accent, var(--primary)) 15%, transparent);
+}
+
+[role="dialog"],
+[data-radix-popper-content-wrapper] > div {
+  border-color: var(--border) !important;
+  box-shadow: 0 18px 54px var(--shadow) !important;
+}
+
+button,
+input,
+textarea,
+[role="button"] {
+  transition: background-color 150ms ease, border-color 150ms ease, color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
+}
+
+button:focus-visible,
+input:focus-visible,
+textarea:focus-visible,
+[role="button"]:focus-visible {
+  outline: 3px solid color-mix(in srgb, var(--ring) 35%, transparent);
+  outline-offset: 2px;
+}
+
+/* teleagent-shinchan-theme:end */

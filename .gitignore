@@ -1,0 +1,7 @@
+.playwright-cli/
+node_modules/
+*.bak
+install-state.json
+.teleagent-shinchan-theme/
+Thumbs.db
+Desktop.ini

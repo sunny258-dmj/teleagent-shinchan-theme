@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>TeleAgent 蜡笔小新主题预览</title>
+  <link rel="icon" href="shinchan-avatar.png">
+  <link rel="stylesheet" href="shinchan-theme.css">
+  <style>
+    *{box-sizing:border-box}body{margin:0;font-family:"Microsoft YaHei",system-ui;color:var(--foreground);overflow:hidden}
+    body::after{background-image:url("shinchan-avatar.png");opacity:.22}
+    .app{height:100vh;display:grid;grid-template-columns:228px 1fr;background:color-mix(in srgb,var(--background) 92%,transparent)}
+    aside{padding:18px 14px;border-right:1px solid var(--sidebar-border);background:var(--sidebar);display:flex;flex-direction:column;gap:8px}
+    .brand{display:flex;align-items:center;gap:10px;padding:4px 8px 18px;font-size:19px;font-weight:800;color:var(--foreground)}
+    .brand img{width:40px;height:40px;object-fit:contain}.nav{padding:10px 12px;border-radius:13px;color:var(--secondary-foreground)}.nav.active{background:var(--sidebar-accent);color:var(--sidebar-accent-foreground);font-weight:700}.profile{margin-top:auto;padding:12px;border:1px solid var(--sidebar-border);border-radius:14px;background:var(--card);font-size:13px}
+    main{display:flex;flex-direction:column;min-width:0}.top{height:58px;padding:0 26px;display:flex;align-items:center;justify-content:space-between;border-bottom:1px solid var(--border);background:color-mix(in srgb,var(--background) 88%,transparent);backdrop-filter:blur(12px)}
+    .stage{padding:34px clamp(28px,6vw,88px);overflow:auto}.hello{font-size:28px;font-weight:800;margin:0}.sub{color:var(--muted-foreground);margin:7px 0 28px}.cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}.home-query-card{padding:18px;min-height:145px}.icon{width:42px;height:42px;border-radius:14px;display:grid;place-items:center;background:var(--accent);font-size:23px}.card-title{margin:14px 0 5px;font-weight:750}.card-copy{font-size:13px;line-height:1.55;color:var(--muted-foreground)}
+    .chat{margin-top:22px;padding:20px;border:1px solid var(--border);border-radius:20px;background:var(--card);box-shadow:0 18px 45px var(--shadow)}.message{display:flex;gap:12px;align-items:flex-start}.avatar{width:36px;height:36px;border-radius:12px;background:var(--secondary);padding:3px}.bubble{max-width:650px;padding:14px 16px;border-radius:6px 18px 18px;background:var(--secondary);line-height:1.7}.composer{margin-top:18px;padding:12px 14px;border:1px solid var(--input);border-radius:16px;background:var(--popover);display:flex;align-items:center;gap:12px;color:var(--subtle-foreground)}.send{margin-left:auto;padding:9px 17px;border:0;border-radius:12px;color:var(--primary-foreground);background:var(--primary);font-weight:700}
+    .switch{border:1px solid var(--border);background:var(--card);color:var(--foreground);padding:8px 12px;border-radius:12px;cursor:pointer}
+    @media(max-width:850px){.app{grid-template-columns:80px 1fr}.brand span,.nav span,.profile{display:none}.cards{grid-template-columns:1fr}.stage{padding:24px}.nav{text-align:center}}
+  </style>
+</head>
+<body>
+  <div class="app">
+    <aside>
+      <div class="brand"><img src="shinchan-avatar.png" alt=""><span>TeleAgent</span></div>
+      <div class="nav active">🏠 <span>首页</span></div>
+      <div class="nav">💬 <span>任务</span></div>
+      <div class="nav">🧩 <span>Skills</span></div>
+      <div class="nav">⚙️ <span>设置</span></div>
+      <div class="profile">小新主题已启用<br><small style="color:var(--muted-foreground)">可随时恢复原主题</small></div>
+    </aside>
+    <main>
+      <div class="top"><strong>星辰超级智能体</strong><button class="switch" onclick="document.documentElement.classList.toggle('dark')">切换明暗模式</button></div>
+      <div class="stage">
+        <h1 class="hello">嗨，今天想做点什么？</h1>
+        <p class="sub">天空蓝、向日葵黄和动感红，保留 TeleAgent 原有布局与交互。</p>
+        <div class="cards">
+          <section class="home-query-card" data-theme="blue"><div class="icon">📝</div><div class="card-title">整理工作材料</div><div class="card-copy">归纳文件内容，生成清晰、可执行的结果。</div></section>
+          <section class="home-query-card" data-theme="teal"><div class="icon">📊</div><div class="card-title">分析数据</div><div class="card-copy">从表格与数据中发现趋势、异常和结论。</div></section>
+          <section class="home-query-card" data-theme="purple"><div class="icon">💡</div><div class="card-title">一起想办法</div><div class="card-copy">把模糊问题拆开，边讨论边推进。</div></section>
+        </div>
+        <section class="chat">
+          <div class="message"><img class="avatar" src="shinchan-avatar.png" alt=""><div class="bubble">主题已经准备好了。界面更活泼，但文字对比度、按钮状态和深色模式仍然清楚好用。</div></div>
+          <div class="composer"><span>告诉 TeleAgent 你想完成什么……</span><button class="send">发送</button></div>
+        </section>
+      </div>
+    </main>
+  </div>
+</body>
+</html>
