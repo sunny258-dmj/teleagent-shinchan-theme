@@ -5,8 +5,9 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$ThemeVersion = '1.0.0'
+$ThemeVersion = '1.0.2'
 $AsarPackage = '@electron/asar@4.3.0'
+$UnpackDirectories = '{dist-electron/im-service,node_modules/better-sqlite3,node_modules/bindings,node_modules/file-uri-to-path}'
 $SkillRoot = Split-Path -Parent $PSScriptRoot
 $ThemeCss = Join-Path $SkillRoot 'assets\shinchan-theme.css'
 $Avatar = Join-Path $SkillRoot 'assets\shinchan-avatar.png'
@@ -86,7 +87,7 @@ try {
     [IO.File]::WriteAllText($cssPath, $patchedCss, [Text.UTF8Encoding]::new($false))
 
     Write-Host 'Building the installable themed archive...'
-    Invoke-Asar pack $extractRoot $outputFullPath
+    Invoke-Asar pack $extractRoot $outputFullPath --unpack-dir $UnpackDirectories
 
     if (-not (Test-Path -LiteralPath $outputFullPath)) {
         throw 'The themed archive output was not created.'
@@ -98,8 +99,21 @@ try {
         throw 'Archive verification failed: the main stylesheet is missing.'
     }
 
+    $unpackedRoot = "$outputFullPath.unpacked"
+    $requiredUnpackedFiles = @(
+        'dist-electron\im-service\index.cjs',
+        'node_modules\better-sqlite3\build\Release\better_sqlite3.node',
+        'node_modules\bindings\bindings.js',
+        'node_modules\file-uri-to-path\index.js'
+    )
+    foreach ($relativePath in $requiredUnpackedFiles) {
+        if (-not (Test-Path -LiteralPath (Join-Path $unpackedRoot $relativePath))) {
+            throw "Archive verification failed: unpacked runtime file is missing: $relativePath"
+        }
+    }
+
     $outputHash = (Get-FileHash -LiteralPath $outputFullPath -Algorithm SHA256).Hash
-    Write-Host "Themed archive verified: $outputHash"
+    Write-Host "Themed archive and unpacked runtime markers verified: $outputHash"
 }
 finally {
     if (Test-Path -LiteralPath $work) {

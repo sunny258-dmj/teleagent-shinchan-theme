@@ -5,7 +5,7 @@ description: Install, verify, reapply, or uninstall the reversible Crayon Shin-c
 
 # TeleAgent 蜡笔小新主题
 
-Use the scripts in this skill instead of editing TeleAgent resources by hand. The theme changes only the Electron renderer CSS; it does not change accounts, conversations, tools, or the separate desktop pet.
+Use the scripts in this skill instead of editing TeleAgent resources by hand. The theme changes the Electron renderer CSS and synchronizes the matching embedded ASAR header hash in the Windows executable; it does not change accounts, conversations, tools, or the separate desktop pet. Both original files are backed up and hash-verified for uninstall.
 
 ## Install
 
