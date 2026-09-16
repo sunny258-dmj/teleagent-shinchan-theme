@@ -1,16 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="640" height="360" viewBox="0 0 640 360">
-  <g stroke="#2d2d32" stroke-linecap="round" stroke-linejoin="round">
-    <path d="M94 304c101-17 349-18 452 0" fill="none" stroke="#c7dff4" stroke-width="12"/>
-    <ellipse cx="320" cy="189" rx="116" ry="89" fill="#f4c8a6" stroke-width="10"/>
-    <path d="M213 160c14-67 66-99 116-99 60 0 105 25 121 77-24-14-52-16-73-9-31-22-62-22-91-8-24-4-50 9-73 39z" fill="#242427" stroke="none"/>
-    <path d="M231 149c14 10 27 10 40 0 15 10 29 10 42 0 16 10 31 10 45-1" fill="none" stroke="#242427" stroke-width="17"/>
-    <ellipse cx="284" cy="190" rx="15" ry="21" fill="#1f2024" stroke="none"/>
-    <ellipse cx="355" cy="190" rx="15" ry="21" fill="#1f2024" stroke="none"/>
-    <path d="M262 158c14-8 27-9 41-3M337 155c13-6 27-5 39 2" fill="none" stroke-width="8"/>
-    <path d="M308 236c17 7 31 5 43-4" fill="none" stroke-width="7"/>
-    <ellipse cx="338" cy="258" rx="28" ry="17" fill="#e96870" stroke-width="6"/>
-    <path d="M214 311c5-30 26-43 51-43 23 0 39 12 45 34M330 303c7-25 25-36 47-36 27 0 46 16 49 44" fill="#f4c8a6" stroke-width="9"/>
-    <circle cx="493" cy="91" r="14" fill="#f4d45b" stroke="none"/>
-    <path d="M493 61v14M493 107v14M463 91h14M509 91h14" fill="none" stroke="#e7ad36" stroke-width="7"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="560" height="420" viewBox="0 0 560 420">
+  <g stroke="#25252a" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M34 344c139-52 322-50 492 0v76H34z" fill="#a7dc79" stroke="none"/>
+    <ellipse cx="294" cy="221" rx="111" ry="86" fill="#f2c19b" stroke-width="10"/>
+    <ellipse cx="185" cy="230" rx="24" ry="31" fill="#f2c19b" stroke-width="8"/><ellipse cx="403" cy="230" rx="24" ry="31" fill="#f2c19b" stroke-width="8"/>
+    <path d="M197 169c17-59 66-88 116-81 52 7 94 35 107 83-26-15-48-18-70-11-20-21-45-27-70-20-25-6-52 5-83 29z" fill="#1b1b1f" stroke="none"/>
+    <path d="M218 177c16-12 32-14 47-6M306 170c17-9 34-7 48 4" fill="none" stroke="#1b1b1f" stroke-width="12"/>
+    <ellipse cx="252" cy="220" rx="19" ry="25" fill="#17181b" stroke="none"/><ellipse cx="326" cy="220" rx="19" ry="25" fill="#17181b" stroke="none"/><circle cx="247" cy="212" r="5" fill="#fff" stroke="none"/><circle cx="321" cy="212" r="5" fill="#fff" stroke="none"/>
+    <ellipse cx="306" cy="279" rx="33" ry="27" fill="#ed7076" stroke-width="7"/>
+    <path d="M193 346c49-42 102-53 161-30 30 12 56 29 77 53" fill="#e8464f" stroke-width="10"/>
+    <path d="M191 344q41-52 86-4M335 338q39-46 83-6" fill="#f2c19b" stroke-width="9"/>
   </g>
+  <g transform="translate(38 62)"><path d="M0 35q0-35 35-35h102q35 0 35 35v50q0 35-35 35H79l-28 28 5-28H35Q0 120 0 85z" fill="#ffe36d"/><text x="31" y="76" font-family="Arial,'Microsoft YaHei',sans-serif" font-size="42" font-weight="900" fill="#222329">你好！</text></g>
 </svg>
