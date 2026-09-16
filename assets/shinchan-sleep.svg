@@ -1,2 +1,12 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="470" viewBox="0 0 512 470">
-<defs><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#21375a" flood-opacity=".18"/></filter></defs><g filter="url(#s)"><ellipse cx="265" cy="392" rx="190" ry="52" fill="#c7ec9d"/><path d="M105 344 q75-90 191-38 q75 35 76 86 q-93 28-203 0z" fill="#e83d44" stroke="#18233b" stroke-width="10"/><ellipse cx="211" cy="290" rx="118" ry="90" fill="#ffd0ad" stroke="#18233b" stroke-width="10"/><path d="M110 246 q48-92 164-54 q52 18 63 63 q-76-30-122-8 q-44-25-105-1z" fill="#151515"/><path d="M155 299 q30 17 56 0 M233 299 q31 17 59 0" fill="none" stroke="#151515" stroke-width="10" stroke-linecap="round"/><ellipse cx="232" cy="342" rx="32" ry="20" fill="#ef6f79" stroke="#18233b" stroke-width="7"/><text x="352" y="190" font-family="Arial Rounded MT Bold,Arial" font-size="62" font-weight="700" fill="#5273c8">Z</text><text x="404" y="133" font-family="Arial Rounded MT Bold,Arial" font-size="44" font-weight="700" fill="#7a8fd0">Z</text></g></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="620" height="380" viewBox="0 0 620 380">
+  <g stroke="#2d2d32" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M96 305c42-69 110-103 199-93 81 8 136 44 158 94-116 30-238 30-357-1z" fill="#eb4e56" stroke-width="10"/>
+    <ellipse cx="232" cy="214" rx="118" ry="84" fill="#f4c8a6" stroke-width="10"/>
+    <path d="M127 184c20-61 65-91 119-91 57 0 101 25 119 68-32-17-62-17-89-7-28-18-57-18-86-5-23-2-43 9-63 35z" fill="#242427" stroke="none"/>
+    <path d="M171 221c22 12 42 11 60-3M253 218c22 12 43 11 61-4" fill="none" stroke-width="9"/>
+    <ellipse cx="258" cy="266" rx="28" ry="17" fill="#e96870" stroke-width="6"/>
+    <ellipse cx="336" cy="315" rx="86" ry="28" fill="#f2d34e" stroke="none" opacity=".9"/>
+    <path d="M481 143c13-17 33-17 46-2 9 11 8 25-4 37-12 13-30 25-45 40 19 2 36 1 51-1" fill="none" stroke="#7c91c8" stroke-width="10"/>
+    <path d="M531 92c10-13 24-13 34-2 8 9 7 19-2 29-9 10-23 18-34 29 15 1 27 0 39-1" fill="none" stroke="#a0acd1" stroke-width="8"/>
+  </g>
+</svg>
