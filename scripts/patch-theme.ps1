@@ -10,12 +10,12 @@ $AsarPackage = '@electron/asar@4.3.0'
 $SkillRoot = Split-Path -Parent $PSScriptRoot
 $ThemeCss = Join-Path $SkillRoot 'assets\shinchan-theme.css'
 $ThemeAssets = @{
-    '__SHINCHAN_AVATAR_DATA__' = 'shinchan-avatar.png'
-    '__SHINCHAN_PEEK_DATA__'   = 'shinchan-peek.png'
-    '__SHINCHAN_WAVE_DATA__'   = 'shinchan-wave.png'
-    '__SHIRO_DATA__'           = 'shiro.png'
-    '__SHINCHAN_SLEEP_DATA__'  = 'shinchan-sleep.png'
-    '__SHINCHAN_SCENE_DATA__'  = 'shinchan-scene.png'
+    '__SHINCHAN_AVATAR_DATA__' = 'shinchan-avatar.svg'
+    '__SHINCHAN_PEEK_DATA__'   = 'shinchan-peek.svg'
+    '__SHINCHAN_WAVE_DATA__'   = 'shinchan-wave.svg'
+    '__SHIRO_DATA__'           = 'shiro.svg'
+    '__SHINCHAN_SLEEP_DATA__'  = 'shinchan-sleep.svg'
+    '__SHINCHAN_SCENE_DATA__'  = 'shinchan-scene.svg'
 }
 $MarkerBegin = '/* teleagent-shinchan-theme:begin */'
 $MarkerEnd = '/* teleagent-shinchan-theme:end */'
@@ -39,7 +39,8 @@ function Invoke-Asar {
 }
 
 function Get-DataUri([string] $Path) {
-    return 'data:image/png;base64,' + [Convert]::ToBase64String([IO.File]::ReadAllBytes($Path))
+    $mime = if ([IO.Path]::GetExtension($Path) -ieq '.svg') { 'image/svg+xml' } else { 'application/octet-stream' }
+    return 'data:' + $mime + ';base64,' + [Convert]::ToBase64String([IO.File]::ReadAllBytes($Path))
 }
 
 $sourcePath = (Resolve-Path -LiteralPath $SourceAsar).Path
