@@ -2,241 +2,155 @@
 /* Version: __THEME_VERSION__ */
 
 :root {
-  --radius: 0.95rem;
-  --foreground: #22314f;
-  --background: #f6fbff;
-  --g8-gray: #22314f;
+  --radius: 1rem;
+  --foreground: #182b4d;
+  --background: #eaf7ff;
+  --g8-gray: #182b4d;
   --card: #fffdf8;
-  --card-foreground: #22314f;
+  --card-foreground: #182b4d;
   --popover: #ffffff;
-  --popover-foreground: #22314f;
-  --primary: #3977e8;
+  --popover-foreground: #182b4d;
+  --primary: #3f80f6;
   --primary-foreground: #ffffff;
-  --primary-hover: #2d64c4;
-  --secondary: #eef6ff;
-  --secondary-foreground: #43577e;
-  --muted: #fff6d8;
-  --muted-foreground: #70809f;
-  --accent: #f6d95f;
+  --primary-hover: #2869db;
+  --secondary: #edf7ff;
+  --secondary-foreground: #425c82;
+  --muted: #fff5c7;
+  --muted-foreground: #6a7d9d;
+  --accent: #f8dc57;
   --accent-foreground: #28324a;
-  --destructive: #e8545b;
-  --brand-green: #63b985;
-  --brand-amber: #e8a739;
-  --warning-foreground: #956312;
-  --border: #d4e3f0;
-  --input: #d8e6f2;
-  --ring: #3977e8;
-  --chart-1: #3977e8;
-  --chart-2: #63b985;
-  --chart-3: #f6d95f;
-  --chart-4: #e8545b;
-  --chart-5: #8a72df;
-  --chart-6: #58aaa6;
-  --chart-7: #64b7e8;
-  --sidebar: #f0f7fd;
-  --sidebar-foreground: #22314f;
-  --sidebar-primary: #3977e8;
+  --destructive: #ee4c55;
+  --brand-green: #66bb79;
+  --brand-amber: #e9a83a;
+  --warning-foreground: #94630f;
+  --border: #a8d4f3;
+  --input: #b9d8ef;
+  --ring: #3f80f6;
+  --chart-1: #3f80f6;
+  --chart-2: #67bc7a;
+  --chart-3: #f5d554;
+  --chart-4: #ec4d56;
+  --chart-5: #8c72e8;
+  --chart-6: #4fb7ad;
+  --chart-7: #68bff1;
+  --sidebar: #eef8ff;
+  --sidebar-foreground: #182b4d;
+  --sidebar-primary: #3f80f6;
   --sidebar-primary-foreground: #ffffff;
-  --sidebar-accent: #fff4cb;
-  --sidebar-accent-foreground: #253250;
-  --sidebar-border: #d4e3f0;
-  --sidebar-ring: #3977e8;
-  --subtle-foreground: #71809d;
-  --disabled-foreground: #a5b2c5;
-  --separator: #dce8f2;
+  --sidebar-accent: #f5fbff;
+  --sidebar-accent-foreground: #182b4d;
+  --sidebar-border: #bddcf0;
+  --sidebar-ring: #3f80f6;
+  --subtle-foreground: #6c7f9e;
+  --disabled-foreground: #a6b4c7;
+  --separator: #cfe5f4;
   --module: #ffffff;
-  --shadow: #27436314;
-  --mention-chip-bg: #eaf4ff;
-  --shinchan-red: #e95057;
-  --shinchan-yellow: #f4d45b;
-  --shinchan-blue: #3977e8;
-  --shinchan-cream: #fff9e9;
-  --shinchan-ink: #2e3038;
+  --shadow: #27436316;
+  --mention-chip-bg: #e9f4ff;
+  --shinchan-red: #ea4850;
+  --shinchan-yellow: #f6d74f;
+  --shinchan-green: #8fd06c;
+  --shinchan-blue: #3f80f6;
+  --shinchan-cream: #fff8e5;
+  --shinchan-ink: #222329;
 }
 
 .dark {
-  --foreground: #edf4ff;
-  --background: #111c2d;
-  --g8-gray: #111c2d;
-  --card: #19283d;
-  --card-foreground: #edf4ff;
-  --popover: #1d2d45;
-  --popover-foreground: #edf4ff;
-  --primary: #79a8ff;
-  --primary-foreground: #122038;
-  --primary-hover: #9dc0ff;
-  --secondary: #23364f;
-  --secondary-foreground: #dce7f5;
+  --foreground: #eef5ff;
+  --background: #101d31;
+  --g8-gray: #101d31;
+  --card: #182b44;
+  --card-foreground: #eef5ff;
+  --popover: #1c304b;
+  --popover-foreground: #eef5ff;
+  --primary: #75a9ff;
+  --primary-foreground: #10203a;
+  --primary-hover: #9cc2ff;
+  --secondary: #223a57;
+  --secondary-foreground: #d9e7f7;
   --muted: #3c3b49;
-  --muted-foreground: #b6c2d4;
-  --accent: #595044;
-  --accent-foreground: #ffe99a;
-  --destructive: #ff737a;
-  --border: #34485f;
-  --input: #394d63;
-  --ring: #7aaaff;
-  --sidebar: #142238;
-  --sidebar-foreground: #edf4ff;
-  --sidebar-primary: #79a8ff;
-  --sidebar-primary-foreground: #142238;
-  --sidebar-accent: #403a34;
-  --sidebar-accent-foreground: #ffe99a;
-  --sidebar-border: #304359;
-  --sidebar-ring: #79a8ff;
-  --subtle-foreground: #aab7cb;
-  --disabled-foreground: #73839c;
-  --separator: #30445b;
-  --module: #19283d;
+  --muted-foreground: #b6c3d5;
+  --accent: #514a3c;
+  --accent-foreground: #ffe99b;
+  --destructive: #ff7077;
+  --border: #34526f;
+  --input: #3b5874;
+  --ring: #79abff;
+  --sidebar: #12223a;
+  --sidebar-foreground: #eef5ff;
+  --sidebar-primary: #79abff;
+  --sidebar-primary-foreground: #12223a;
+  --sidebar-accent: #233952;
+  --sidebar-accent-foreground: #ffe99b;
+  --sidebar-border: #2e4966;
+  --sidebar-ring: #79abff;
+  --subtle-foreground: #aab9ce;
+  --disabled-foreground: #73859d;
+  --separator: #304b67;
+  --module: #182b44;
   --shadow: #00000030;
-  --mention-chip-bg: #28405d;
+  --mention-chip-bg: #28445f;
   --warning-foreground: #f6cf71;
-  --shinchan-cream: #2a2b31;
+  --shinchan-cream: #292b31;
 }
 
-html, body, #root { min-height: 100%; }
+html,body,#root{min-height:100%}
+body{background-color:var(--background);background-image:radial-gradient(circle at 12% 9%,rgb(255 255 255 / 78%) 0 42px,transparent 43px),radial-gradient(circle at 89% 10%,rgb(255 255 255 / 52%) 0 54px,transparent 55px),linear-gradient(180deg,#dff3ff 0,#eef9ff 48%,#f7fcff 100%);background-attachment:fixed}
+.dark body{background-image:radial-gradient(circle at 12% 9%,rgb(255 255 255 / 3%) 0 42px,transparent 43px),linear-gradient(180deg,#122640 0,#101d31 100%)}
 
-body {
-  background-color: var(--background);
-  background-image:
-    radial-gradient(circle at 12% 8%, rgb(246 217 95 / 10%) 0 3px, transparent 4px),
-    radial-gradient(circle at 88% 11%, rgb(57 119 232 / 6%) 0 72px, transparent 73px),
-    linear-gradient(180deg, rgb(255 255 255 / 22%), transparent 34%);
-  background-attachment: fixed;
+/* Keep the old injected container inert. Artwork is integrated into bounded surfaces instead. */
+body::before,body::after,#shinchan-theme-decor{display:none!important}
+
+aside,[data-slot="sidebar"]{background-color:var(--sidebar)!important;border-color:var(--sidebar-border)!important}
+header,[data-slot="header"]{background:color-mix(in srgb,var(--background) 91%,transparent)!important;border-color:var(--border)!important;backdrop-filter:blur(15px) saturate(1.08)}
+main,[role="main"]{background-color:transparent!important}
+
+/* Approved home-page direction: sky/grass scene sits inside the home surface, not over controls. */
+main:has(.home-query-card),[role="main"]:has(.home-query-card){background-image:url("__SHINCHAN_SCENE_DATA__"),linear-gradient(180deg,transparent,transparent)!important;background-repeat:no-repeat!important;background-position:center top,0 0!important;background-size:100% 360px,auto!important}
+
+/* Small bounded sidebar illustration. Only the first real sidebar gets it. */
+@media (min-height:760px){
+  aside:first-of-type,[data-slot="sidebar"]{background-image:url("__SHINCHAN_SLEEP_DATA__")!important;background-repeat:no-repeat!important;background-position:center bottom 8px!important;background-size:min(220px,88%) auto!important;padding-bottom:118px!important}
 }
 
-.dark body {
-  background-image:
-    radial-gradient(circle at 12% 8%, rgb(246 217 95 / 7%) 0 3px, transparent 4px),
-    radial-gradient(circle at 88% 11%, rgb(121 168 255 / 5%) 0 72px, transparent 73px),
-    linear-gradient(180deg, rgb(255 255 255 / 2%), transparent 34%);
-}
+/* Home action cards match the approved pastel panels. */
+.home-query-card,[data-slot="card"]{border-color:color-mix(in srgb,var(--primary) 28%,var(--border));background:var(--card);box-shadow:0 10px 26px var(--shadow);transition:transform 150ms ease,border-color 150ms ease,box-shadow 150ms ease}
+.home-query-card{position:relative;overflow:hidden}
+.home-query-card:nth-of-type(1){background:linear-gradient(145deg,#fffdf8,#fff8e7)}
+.home-query-card:nth-of-type(2){background:linear-gradient(145deg,#fffdf8,#fff1f1)}
+.home-query-card:nth-of-type(3){background:linear-gradient(145deg,#fffdf8,#effbf3)}
+.home-query-card:nth-of-type(4){background:linear-gradient(145deg,#fffdf8,#fff9e8)}
+.home-query-card::before{content:"";position:absolute;left:0;top:0;width:100%;height:4px;background:var(--shinchan-red)}
+.home-query-card:nth-of-type(2)::before{background:#8d6cf0}.home-query-card:nth-of-type(3)::before{background:#50b7a8}.home-query-card:nth-of-type(4)::before{background:var(--shinchan-blue)}
+.home-query-card::after{content:"";position:absolute;right:22px;top:26px;width:34px;height:28px;background:linear-gradient(115deg,transparent 0 40%,color-mix(in srgb,var(--accent) 86%,transparent) 41% 47%,transparent 48% 62%,color-mix(in srgb,var(--accent) 72%,transparent) 63% 69%,transparent 70%);opacity:.8;pointer-events:none}
+.home-query-card:hover,[data-slot="card"]:hover{transform:translateY(-2px);border-color:color-mix(in srgb,var(--primary) 52%,var(--border));box-shadow:0 14px 34px color-mix(in srgb,var(--primary) 10%,transparent)}
+.dark .home-query-card:nth-of-type(n){background:var(--card)}
 
-/* v2.1: no persistent character stickers. The injected decor container stays inert
-   so existing installer/startup logic remains unchanged. */
-body::before,
-body::after,
-#shinchan-theme-decor {
-  display: none !important;
-}
+/* Primary tab/segmented controls stay airy and cartoon-clean. */
+[role="tablist"], [data-slot="tabs-list"]{background:color-mix(in srgb,var(--secondary) 86%,white 14%);border-radius:999px}
+[role="tab"][data-state="active"], [data-slot="tabs-trigger"][data-state="active"]{background:var(--popover);color:var(--primary);box-shadow:inset 0 0 0 2px color-mix(in srgb,var(--primary) 75%,transparent),0 3px 10px var(--shadow)}
 
-/* Stable application surfaces only. Avoid broad class-substring selectors. */
-aside,
-[data-slot="sidebar"] {
-  background: var(--sidebar) !important;
-  border-color: var(--sidebar-border) !important;
-}
+/* Composer and forms. */
+textarea,input,[contenteditable="true"]{border-color:var(--input)!important;background:color-mix(in srgb,var(--popover) 98%,var(--secondary))!important}
+textarea:focus,input:focus,[contenteditable="true"]:focus{border-color:color-mix(in srgb,var(--primary) 55%,var(--input))!important;box-shadow:0 0 0 3px color-mix(in srgb,var(--primary) 11%,transparent)}
 
-header,
-[data-slot="header"] {
-  background: color-mix(in srgb, var(--background) 94%, transparent) !important;
-  border-color: var(--border) !important;
-  backdrop-filter: blur(14px) saturate(1.06);
-}
+/* Dialogs and menus. */
+[role="dialog"],[data-radix-popper-content-wrapper]>div,[data-slot="popover-content"]{border-color:var(--border)!important;background:var(--popover)!important;box-shadow:0 20px 52px var(--shadow)!important}
 
-main,
-[role="main"] {
-  background: transparent;
-}
+/* Conversation bubbles. */
+[data-message-author-role="assistant"],[class*="assistant-message"]{background:var(--secondary);border-color:var(--border)}
+[data-message-author-role="user"],[class*="user-message"]{background:linear-gradient(135deg,#5793ff,var(--primary));color:var(--primary-foreground)}
 
-/* Home cards: warm paper surfaces with restrained Shin-chan accents. */
-.home-query-card,
-[data-slot="card"] {
-  border-color: var(--border);
-  background: var(--card);
-  box-shadow: 0 8px 24px var(--shadow);
-  transition: border-color 150ms ease, box-shadow 150ms ease, transform 150ms ease;
-}
+button,[role="button"]{transition:background-color 140ms ease,border-color 140ms ease,color 140ms ease,box-shadow 140ms ease,transform 140ms ease}
+button:hover,[role="button"]:hover{transform:translateY(-1px)}
+button:focus-visible,input:focus-visible,textarea:focus-visible,[role="button"]:focus-visible{outline:3px solid color-mix(in srgb,var(--ring) 27%,transparent);outline-offset:2px}
+[role="status"],[data-state="success"]{border-radius:999px}
 
-.home-query-card {
-  position: relative;
-  overflow: hidden;
-}
+::selection{color:#233250;background:#ffe36d}
+::-webkit-scrollbar{width:10px;height:10px}
+::-webkit-scrollbar-thumb{border:3px solid transparent;border-radius:999px;background:color-mix(in srgb,var(--primary) 31%,transparent);background-clip:padding-box}
 
-.home-query-card::before {
-  content: "";
-  position: absolute;
-  left: 18px;
-  top: 0;
-  width: 42px;
-  height: 4px;
-  border-radius: 0 0 999px 999px;
-  background: var(--shinchan-red);
-}
-
-.home-query-card:nth-of-type(2)::before { background: var(--shinchan-yellow); }
-.home-query-card:nth-of-type(3)::before { background: #59b7a9; }
-.home-query-card:nth-of-type(4)::before { background: var(--shinchan-blue); }
-
-.home-query-card:hover,
-[data-slot="card"]:hover {
-  transform: translateY(-1px);
-  border-color: color-mix(in srgb, var(--primary) 32%, var(--border));
-  box-shadow: 0 12px 28px color-mix(in srgb, var(--primary) 8%, transparent);
-}
-
-/* Dialogs and menus stay visually consistent without decorative overlays. */
-[role="dialog"],
-[data-radix-popper-content-wrapper] > div,
-[data-slot="popover-content"] {
-  border-color: var(--border) !important;
-  background: var(--popover) !important;
-  box-shadow: 0 18px 48px var(--shadow) !important;
-}
-
-textarea,
-input,
-[contenteditable="true"] {
-  border-color: var(--input) !important;
-  background: color-mix(in srgb, var(--popover) 97%, var(--secondary)) !important;
-}
-
-button,
-[role="button"] {
-  transition: background-color 140ms ease, border-color 140ms ease, color 140ms ease, box-shadow 140ms ease;
-}
-
-button:focus-visible,
-input:focus-visible,
-textarea:focus-visible,
-[role="button"]:focus-visible {
-  outline: 3px solid color-mix(in srgb, var(--ring) 27%, transparent);
-  outline-offset: 2px;
-}
-
-/* Conversation surfaces. */
-[data-message-author-role="assistant"],
-[class*="assistant-message"] {
-  background: var(--secondary);
-  border-color: var(--border);
-}
-
-[data-message-author-role="user"],
-[class*="user-message"] {
-  background: var(--primary);
-  color: var(--primary-foreground);
-}
-
-[role="status"],
-[data-state="success"] {
-  border-radius: 999px;
-}
-
-::selection {
-  color: #26304a;
-  background: #f7dc6a;
-}
-
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-thumb {
-  border: 3px solid transparent;
-  border-radius: 999px;
-  background: color-mix(in srgb, var(--primary) 30%, transparent);
-  background-clip: padding-box;
-}
-
-/* Keep small screens especially clean. */
-@media (max-width: 900px) {
-  .home-query-card::before { width: 32px; left: 14px; }
-}
+@media(max-width:1050px){main:has(.home-query-card),[role="main"]:has(.home-query-card){background-size:1250px 330px!important;background-position:58% top!important}}
+@media(max-width:820px){main:has(.home-query-card),[role="main"]:has(.home-query-card){background-image:linear-gradient(180deg,#e5f5ff,transparent 320px)!important}aside:first-of-type,[data-slot="sidebar"]{background-image:none!important;padding-bottom:initial!important}}
 
 /* teleagent-shinchan-theme:end */
