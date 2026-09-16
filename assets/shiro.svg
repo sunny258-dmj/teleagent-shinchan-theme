@@ -1,2 +1,14 @@
 <svg xmlns="http://www.w3.org/2000/svg" width="512" height="470" viewBox="0 0 512 470">
-<defs><filter id="s"><feDropShadow dx="0" dy="8" stdDeviation="8" flood-color="#21375a" flood-opacity=".18"/></filter></defs><g filter="url(#s)"><ellipse cx="255" cy="316" rx="130" ry="90" fill="#fff" stroke="#18233b" stroke-width="10"/><circle cx="246" cy="205" r="108" fill="#fff" stroke="#18233b" stroke-width="10"/><path d="M169 154 Q94 153 113 235 Q148 223 177 197Z" fill="#fff" stroke="#18233b" stroke-width="10"/><path d="M323 159 Q405 149 390 234 Q353 220 322 197Z" fill="#fff" stroke="#18233b" stroke-width="10"/><circle cx="211" cy="208" r="10" fill="#151515"/><circle cx="282" cy="208" r="10" fill="#151515"/><ellipse cx="246" cy="241" rx="18" ry="13" fill="#151515"/><path d="M246 253 q-28 35-54 4 M246 253 q28 35 54 4" fill="none" stroke="#151515" stroke-width="8" stroke-linecap="round"/><path d="M247 262 q12 20 0 34 q-12-14 0-34" fill="#ef6f79"/><path d="M380 315 q70 5 57-55" fill="none" stroke="#fff" stroke-width="34" stroke-linecap="round"/><path d="M380 315 q70 5 57-55" fill="none" stroke="#18233b" stroke-width="10" stroke-linecap="round"/></g></svg>
+  <g stroke="#2d2d32" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="257" cy="326" rx="122" ry="78" fill="#fff" stroke-width="9"/>
+    <circle cx="252" cy="211" r="96" fill="#fff" stroke-width="9"/>
+    <path d="M177 168c-45-20-78-5-72 50 28 1 51-10 70-31M326 169c48-20 82-4 75 51-29 0-53-11-73-31" fill="#fff" stroke-width="9"/>
+    <circle cx="219" cy="210" r="8" fill="#242427" stroke="none"/>
+    <circle cx="285" cy="210" r="8" fill="#242427" stroke="none"/>
+    <ellipse cx="252" cy="240" rx="16" ry="11" fill="#242427" stroke="none"/>
+    <path d="M252 250c-17 18-33 19-45 5M252 250c17 18 34 19 47 4" fill="none" stroke-width="7"/>
+    <path d="M245 265c11 13 12 25 2 34-9-11-10-22-2-34z" fill="#e96870" stroke="none"/>
+    <path d="M374 322c53 2 78-24 70-57" fill="none" stroke="#fff" stroke-width="27"/>
+    <path d="M374 322c53 2 78-24 70-57" fill="none" stroke-width="8"/>
+  </g>
+</svg>
