@@ -5,7 +5,7 @@ param(
 )
 
 $ErrorActionPreference = 'Stop'
-$ThemeVersion = '2.0.1'
+$ThemeVersion = '2.1.0'
 $AsarPackage = '@electron/asar@4.3.0'
 $UnpackDirectories = '{dist-electron/im-service,node_modules/better-sqlite3,node_modules/bindings,node_modules/file-uri-to-path}'
 $SkillRoot = Split-Path -Parent $PSScriptRoot
