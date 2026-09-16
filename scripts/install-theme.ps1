@@ -7,7 +7,7 @@ param(
 
 $ErrorActionPreference = 'Stop'
 $SupportedVersions = @('2.5.2', '2.5.2.0')
-$ThemeVersion = '2.0.1'
+$ThemeVersion = '2.1.0'
 $PatchScript = Join-Path $PSScriptRoot 'patch-theme.ps1'
 
 function Resolve-TeleAgentRoot {
