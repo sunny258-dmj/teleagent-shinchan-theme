@@ -1,14 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="512" height="470" viewBox="0 0 512 470">
-  <g stroke="#2d2d32" stroke-linecap="round" stroke-linejoin="round">
-    <ellipse cx="257" cy="326" rx="122" ry="78" fill="#fff" stroke-width="9"/>
-    <circle cx="252" cy="211" r="96" fill="#fff" stroke-width="9"/>
-    <path d="M177 168c-45-20-78-5-72 50 28 1 51-10 70-31M326 169c48-20 82-4 75 51-29 0-53-11-73-31" fill="#fff" stroke-width="9"/>
-    <circle cx="219" cy="210" r="8" fill="#242427" stroke="none"/>
-    <circle cx="285" cy="210" r="8" fill="#242427" stroke="none"/>
-    <ellipse cx="252" cy="240" rx="16" ry="11" fill="#242427" stroke="none"/>
-    <path d="M252 250c-17 18-33 19-45 5M252 250c17 18 34 19 47 4" fill="none" stroke-width="7"/>
-    <path d="M245 265c11 13 12 25 2 34-9-11-10-22-2-34z" fill="#e96870" stroke="none"/>
-    <path d="M374 322c53 2 78-24 70-57" fill="none" stroke="#fff" stroke-width="27"/>
-    <path d="M374 322c53 2 78-24 70-57" fill="none" stroke-width="8"/>
+<svg xmlns="http://www.w3.org/2000/svg" width="480" height="360" viewBox="0 0 480 360">
+  <g stroke="#26262b" stroke-linecap="round" stroke-linejoin="round">
+    <ellipse cx="252" cy="238" rx="139" ry="82" fill="#fff" stroke-width="11"/>
+    <circle cx="202" cy="151" r="84" fill="#fff" stroke-width="11"/>
+    <path d="M136 122c-61-20-91 0-89 49 39 12 70 4 95-22M270 125c58-23 90-5 92 43-39 15-70 8-95-18" fill="#fff" stroke-width="11"/>
+    <circle cx="176" cy="153" r="9" fill="#17181b" stroke="none"/><circle cx="226" cy="153" r="9" fill="#17181b" stroke="none"/>
+    <ellipse cx="201" cy="180" rx="16" ry="12" fill="#17181b" stroke="none"/>
+    <path d="M201 192q-23 27-47 3M201 192q24 27 49 3" fill="none" stroke-width="8"/>
+    <path d="M202 204q10 20 0 33q-11-13 0-33" fill="#ef747c" stroke="none"/>
+    <path d="M129 255l-42 72M210 309l-13 39M313 307l29 37M371 246l54 38" fill="none" stroke="#fff" stroke-width="33"/>
+    <path d="M129 255l-42 72M210 309l-13 39M313 307l29 37M371 246l54 38" fill="none" stroke-width="11"/>
+    <path d="M381 232q63 3 78-41" fill="none" stroke="#fff" stroke-width="31"/><path d="M381 232q63 3 78-41" fill="none" stroke-width="10"/>
   </g>
 </svg>
